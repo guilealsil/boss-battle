@@ -1,10 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h> 
-#include<locale.h> //utilizada em conjunto com a linha do setlocale
-#include<time.h> //biblioteca para usar o rand().
+#include<locale.h>
+#include<time.h>
 #include<conio.h> 
-#include<ctype.h> //converte letras minusculas para maisusculas
-#include<windows.h> //função para mudar a cor de determinada parte do código, tbm inclui timers
+#include<ctype.h>
+#include<windows.h>
 
 int main() 
 {
@@ -23,19 +23,19 @@ int main()
 	
 	printf("\t############## Boss Battle ##############\n\n");
 	
-	printf(" ANXIETY: 'FAREI DA SUA VIDA UMA MISÉRIA!'\n");
-	printf(" Player: 'É o que veremos.'\n\n");
+	printf(" ANXIETY: 'FAREI DA SUA VIDA UMA MISÃ‰RIA!'\n");
+	printf(" Player: 'Ã‰ o que veremos.'\n\n");
 	
 	do{
 		repeat:
-		printf("\tAÇÕES E CUSTOS DE SP:\n\n"); //menu
+		printf("\tAÃ‡Ã•ES E CUSTOS DE SP:\n\n"); //menu
 		printf("\t[1] SLASH - 20 ATK [%d SP]\n", skill_a);
 		printf("\t[2] TRIPLE SLASH - 3 HITS (8, 9, 10 ATK) [%d SP]\n", skill_b);
 		printf("\t[3] HEAL - RECUPERA 10 HP [%d SP]\n", heal);
 		printf("\t[PASSIVO] Player RECUPERA 2 DE SP A CADA RODADA\n");
 		printf("\t[PASSIVO] O DANO DE SLASH AUMENTA EM 1 A CADA RODADA\n");
 		printf("\t[PASSIVO DE ANXIETY] SE O HP FOR MENOR QUE 150, DANO DE ANXIETY AUMENTA EM 1 A CADA RODADA\n\n");
-		printf("Selecione uma opção: ");
+		printf("Selecione uma opÃ§Ã£o: ");
 		scanf("%d", &op);
 		printf("\n");
 			switch (op){
@@ -84,7 +84,7 @@ int main()
 					break;
 				default:
 					system("cls");
-					printf("Opção inválida. Tente novamente.\n");
+					printf("OpÃ§Ã£o invÃ¡lida. Tente novamente.\n");
 					goto repeat;
 			}
 		if (hp_p < 1){
@@ -102,7 +102,7 @@ int main()
 	} while (hp_b > 0);
 	
 	system("cls");
-	printf("\n\t\tVITÓRIA!");
+	printf("\n\t\tVITÃ“RIA!");
 
 	stop:
 	system("pause");
